@@ -51,7 +51,7 @@
             <select name="meal" id="meal">
                 <option value="">--please select an option--</option>
                 <option value="fish">Fish</option>
-                <option value="veh">Vegetarian</option>
+                <option value="veg">Vegetarian</option>
                 <option value="steak">Steak</option>
                 <!-- we can also add an attribut to pre select
                 by adding <option value="fish" selected>Fish</Option> -->
@@ -67,7 +67,20 @@
             <textarea name="Request" id="request" name="request" cols="50" rows="10"></textarea>
         </P>
         <button>submit</button>
+    </form>
 
+    <h1>Validation Demo</h1>
+    <form action="/dummy">
+        <p><label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+        </p>
+        <p>
+            <label>Username
+                <input type="text" name="username" id="username" minlength="5" maxlength="15" required>
+            </label>
+        </p>
+        <!-- you can also do validation on Mail, Tel, and Url -->
+        <button>Sumbmit</button>
     </form>
 </body>
 </html> 
