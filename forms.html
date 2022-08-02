@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <p><label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="Username" name="Username"></p>
+        <p><label for="password">Enter Your Password</label>
+            <input type="password" placeholder="Password" id="password" name="password"></p>
+        <p><label for="color">Select your desire color</label>
+            <input type="color" id="color" name="color"></p>
+        <p><label for="number"> Please input your Card Pin</label>
+            <input type="number" placeholder="XXXX-XXXX-XXXX" name="Num" min="1" max="100"></p>
+        <p><label for="date">Please enter your date of birth</label>
+            <input type="date" id="date" name="date"></p>
+        <!-- this button will sybmit the form -->
+            <button>Submit</button>
+        <!-- this will also submit the form -->
+        <button type="submit">Click Me</button>
+        <!-- this button wont submit the form b/c of the "type" attribute -->
+        <button type="button">Regular botton wont submit </button>
+    </form>
+    <hr>
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search?q=puppy">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Reddit search</h3>
+    <form action="https://www.reddit.com/search/?q=dogs">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h2>More input!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_TOS" id="agree" checked>
+        <label for="agree">I agree to the Terms and Condition</label> 
+        <p>
+            <label for="xs">Extra-small</label>
+            <input type="radio" name="size" id="xs" value="extral-small">
+            <label for="s">Small</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m">Medium</label>
+            <input type="radio" name="size" id="m" value="medium">
+        </p>
+        <P>
+            <label for="meal">Meal Type:</label>
+            <select name="meal" id="meal">
+                <option value="">--please select an option--</option>
+                <option value="fish">Fish</option>
+                <option value="veh">Vegetarian</option>
+                <option value="steak">Steak</option>
+                <!-- we can also add an attribut to pre select
+                by adding <option value="fish" selected>Fish</Option> -->
+            </select>
+        </P>
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" min="1" max="20" name="Cheese-level">
+            <!-- step attribute can also be added -->
+        </p>
+        <P>
+            <label for="request">Any Special Request</label>
+            <textarea name="Request" id="request" name="request" cols="50" rows="10"></textarea>
+        </P>
+        <button>submit</button>
+
+    </form>
+</body>
+</html> 
