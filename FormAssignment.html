@@ -14,22 +14,23 @@
         </label>
 
         <p>
+            <h2>Select a Race</h2>
             <input type="radio" name="race" id="fun-run" value="fun run 5k">
-            <label for="fun-run">Fun Run 5k</label>
+            <label for="fun-run">Fun Run 5k</label><br>
             <input type="radio" name="race" id="half-marathon" value="half marathon">
-            <label for="half-marathon">Half Marathon</label>
+            <label for="half-marathon">Half Marathon</label><br>
             <input type="radio" name="race" id="full-marathon" value="full marathon">
             <label for="full-marathon">Full Marathon</label>
         </p>
-        <p>
-            <label>Mail
-                <input type="mail" name="mail" id="mail">
+        <div>
+            <label>EMail
+                <input type="email" name="email" id="e mail" required>
             </label>
             <label>Password
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </label>
-        </p>
-        <p>
+        </div>
+        <div>
             <label>Select Age Group
                 <select name="age" id="age">
                     <option value="">--Select age group</option>
@@ -40,7 +41,7 @@
                     <option value=">=35">35-40</option>
                     </select>
             </label>
-        </p>
+        </div>
         <button>Register</button>
     </form>
 </body>
