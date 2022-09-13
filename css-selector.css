@@ -1,0 +1,84 @@
+a[href*="google"]{
+    color: magenta;
+}
+
+body {
+    background-color: #f1faee;
+
+}
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+footer + a {
+    color: #457b9d;
+}
+h1, h2 {
+    color: #1d3557;
+}
+h2::first-letter {
+    font-size: 50px;
+}
+h2 + button {
+    background-color: magenta;
+    font-size: 15px;
+}
+input[type=password] {
+    color: green;
+}
+p::first-line {
+    color: #f30ef3;
+}
+p::selection {
+    background-color: rgb(148, 107, 73);
+}
+.post a {
+    text-decoration: none;
+    font-weight: 700;    
+}
+.post a:hover {
+    text-decoration: underline;
+}
+.post button:hover{
+    background-color: #e63946;
+}
+.post button:active{
+    background-color: greenyellow;
+}
+span {
+    color: #457b9d;
+}
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post:nth-of-type(2n){
+    background-color: #d0dfcd;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+  /* DO NOT TOUCH THIS FILE!!!  */
+  /* THIS CODE WILL MAKE SENSE ONCE WE COVER FLEXBOX!  */
+  #board {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+  .square {
+    background-color: red;
+  }
+  .square:nth-of-type(2n){
+    background-color: black;
+  }
